@@ -3,11 +3,12 @@ import 'package:flame/components.dart';
 import 'package:flame/palette.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:flame/input.dart';
 import 'car_controller.dart';
 import 'track.dart';
 import 'opponent_car.dart';
 
-class CarRacingGame extends FlameGame with HasCollisionDetection {
+class CarRacingGame extends FlameGame with HasCollisionDetection, HasKeyboardHandlerComponents {
   late PlayerCar player;
   late Track backgroundTrack;
   late JoystickComponent joystick;
